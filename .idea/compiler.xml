@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="MireaJavaPractices4Term" />
         <module name="MireaJavaPractice4Term" />
+        <module name="JavaNewPractices" />
       </profile>
     </annotationProcessing>
   </component>

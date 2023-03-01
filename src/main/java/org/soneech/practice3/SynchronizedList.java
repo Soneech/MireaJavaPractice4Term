@@ -3,31 +3,31 @@ package org.soneech.practice3;
 import java.util.*;
 
 public class SynchronizedList<E> implements List<E> {  // implementation with synchronized
-    private volatile ArrayList<E> LIST = new ArrayList<>();
+    private final ArrayList<E> list = new ArrayList<>();
 
     @Override
     public int size() {
-        return LIST.size();
+        return list.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return LIST.isEmpty();
+        return list.isEmpty();
     }
 
     @Override
-    synchronized public boolean contains(Object o) {
-        return LIST.contains(o);
+    public boolean contains(Object o) {
+        return list.contains(o);
     }
 
     @Override
-    synchronized public Iterator<E> iterator() {
-        return LIST.iterator();
+    public Iterator<E> iterator() {
+        return list.iterator();
     }
 
     @Override
     public Object[] toArray() {
-        return LIST.toArray();
+        return list.toArray();
     }
 
     @Override
@@ -37,91 +37,91 @@ public class SynchronizedList<E> implements List<E> {  // implementation with sy
 
     @Override
     synchronized public boolean add(E e) {
-        return LIST.add(e);
+        return list.add(e);
     }
 
     @Override
     synchronized public boolean remove(Object o) {
-        return LIST.remove(o);
+        return list.remove(o);
     }
 
     @Override
-    synchronized public boolean containsAll(Collection<?> c) {
-        return LIST.containsAll(c);
+    public boolean containsAll(Collection<?> c) {
+        return list.containsAll(c);
     }
 
     @Override
     synchronized public boolean addAll(Collection<? extends E> c) {
-        return LIST.addAll(c);
+        return list.addAll(c);
     }
 
     @Override
     synchronized public boolean addAll(int index, Collection<? extends E> c) {
-        return LIST.addAll(index, c);
+        return list.addAll(index, c);
     }
 
     @Override
     synchronized public boolean removeAll(Collection<?> c) {
-        return LIST.removeAll(c);
+        return list.removeAll(c);
     }
 
     @Override
     synchronized public boolean retainAll(Collection<?> c) {
-        return LIST.retainAll(c);
+        return list.retainAll(c);
     }
 
     @Override
     synchronized public void clear() {
-        LIST.clear();
+        list.clear();
     }
 
     @Override
-    synchronized public E get(int index) {
-        return LIST.get(index);
+    public E get(int index) {
+        return list.get(index);
     }
 
     @Override
     synchronized public E set(int index, E element) {
-        return LIST.set(index, element);
+        return list.set(index, element);
     }
 
     @Override
     synchronized public void add(int index, E element) {
-        LIST.add(index, element);
+        list.add(index, element);
     }
 
     @Override
     synchronized public E remove(int index) {
-        return LIST.remove(index);
+        return list.remove(index);
     }
 
     @Override
-    synchronized public int indexOf(Object o) {
-        return LIST.indexOf(o);
+    public int indexOf(Object o) {
+        return list.indexOf(o);
     }
 
     @Override
-    synchronized public int lastIndexOf(Object o) {
-        return LIST.lastIndexOf(o);
+    public int lastIndexOf(Object o) {
+        return list.lastIndexOf(o);
     }
 
     @Override
-    synchronized public ListIterator<E> listIterator() {
-        return LIST.listIterator();
+    public ListIterator<E> listIterator() {
+        return list.listIterator();
     }
 
     @Override
-    synchronized public ListIterator<E> listIterator(int index) {
-        return LIST.listIterator(index);
+    public ListIterator<E> listIterator(int index) {
+        return list.listIterator(index);
     }
 
     @Override
-    synchronized public List<E> subList(int fromIndex, int toIndex) {
-        return (LIST.subList(fromIndex, toIndex));
+    public List<E> subList(int fromIndex, int toIndex) {
+        return list.subList(fromIndex, toIndex);
     }
 
     @Override
     public String toString() {
-        return LIST.toString();
+        return list.toString();
     }
 }

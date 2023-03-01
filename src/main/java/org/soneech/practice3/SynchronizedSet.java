@@ -5,32 +5,32 @@ import java.util.concurrent.Semaphore;
 
 public class SynchronizedSet<E> implements Set<E> {  // implementation with semaphore
     private final int THREADS_COUNT = 1;
-    private final HashSet<E> SET = new HashSet<>();
-    private final Semaphore SEMAPHORE = new Semaphore(THREADS_COUNT);
+    private final HashSet<E> set = new HashSet<>();
+    private final Semaphore semaphore = new Semaphore(THREADS_COUNT);
 
     @Override
     public int size() {
-        return SET.size();
+        return set.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return SET.isEmpty();
+        return set.isEmpty();
     }
 
     @Override
     public boolean contains(Object o) {
-        return SET.contains(o);
+        return set.contains(o);
     }
 
     @Override
     public Iterator<E> iterator() {
-        return SET.iterator();
+        return set.iterator();
     }
 
     @Override
     public Object[] toArray() {
-        return SET.toArray();
+        return set.toArray();
     }
 
     @Override
@@ -41,9 +41,9 @@ public class SynchronizedSet<E> implements Set<E> {  // implementation with sema
     @Override
     public boolean add(E e) {
         try {
-            SEMAPHORE.acquire();
-            SET.add(e);
-            SEMAPHORE.release();
+            semaphore.acquire();
+            set.add(e);
+            semaphore.release();
             return true;
         } catch (InterruptedException exception) {
             exception.printStackTrace();
@@ -54,14 +54,14 @@ public class SynchronizedSet<E> implements Set<E> {  // implementation with sema
     @Override
     public boolean remove(Object o) {
         try {
-            SEMAPHORE.acquire();
-            if (SET.contains(o)) {
-                SET.remove(o);
-                SEMAPHORE.release();
+            semaphore.acquire();
+            if (set.contains(o)) {
+                set.remove(o);
+                semaphore.release();
                 return true;
             }
             else {
-                SEMAPHORE.release();
+                semaphore.release();
                 return false;
             }
         } catch (InterruptedException exception) {
@@ -72,15 +72,15 @@ public class SynchronizedSet<E> implements Set<E> {  // implementation with sema
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        return SET.containsAll(c);
+        return set.containsAll(c);
     }
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
         try {
-            SEMAPHORE.acquire();
-            SET.addAll(c);
-            SEMAPHORE.release();
+            semaphore.acquire();
+            set.addAll(c);
+            semaphore.release();
             return true;
         } catch (InterruptedException exception) {
             exception.printStackTrace();
@@ -90,15 +90,15 @@ public class SynchronizedSet<E> implements Set<E> {  // implementation with sema
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        return SET.retainAll(c);
+        return set.retainAll(c);
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
         try {
-            SEMAPHORE.release();
-            SET.removeAll(c);
-            SEMAPHORE.acquire();
+            semaphore.release();
+            set.removeAll(c);
+            semaphore.acquire();
             return true;
         } catch (InterruptedException exception) {
             exception.printStackTrace();
@@ -108,11 +108,11 @@ public class SynchronizedSet<E> implements Set<E> {  // implementation with sema
 
     @Override
     public void clear() {
-        SET.clear();
+        set.clear();
     }
 
     @Override
     public String toString() {
-       return SET.toString();
+       return set.toString();
     }
 }

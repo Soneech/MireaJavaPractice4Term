@@ -11,13 +11,13 @@ public class Application {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(BeanConfiguration.class);
 
-        Guitarist guitarist = context.getBean(Guitarist.class);
+        Guitarist guitarist = (Guitarist) context.getBean("Guitarist");
         guitarist.doMusic();
 
-        Drummer drummer = context.getBean(Drummer.class);
+        Drummer drummer = (Drummer) context.getBean("Drummer");
         drummer.doMusic();
 
-        Trombonist trombonist = context.getBean(Trombonist.class);
+        Trombonist trombonist = (Trombonist) context.getBean("Trombonist");
         trombonist.doMusic();
     }
 }

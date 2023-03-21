@@ -1,5 +1,4 @@
 # MireaJavaPractice4Term
-Решение практических разбито по пакетам.
 
 ## [Practice 1](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practices1-8/src/main/java/org/soneech/practice1)
 Имплементировать интерфейс Comparator, сравнивающий две строки по сумме всех чисел, представленных в строке.

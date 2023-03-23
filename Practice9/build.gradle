@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+group 'org.soneech'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+jar {
+    archiveBaseName = 'app'
+    destinationDirectory = file('jars')
+    manifest {
+        attributes 'Main-Class': 'org.soneech.Main'
+    }
+}
+
+task copyJar {
+    dependsOn 'jar'
+    copy {
+        from jar
+        into './output'
+    }
+}
+
+
+task dockerTask {
+    dependsOn 'copyJar'
+    doLast {
+        exec {
+            commandLine 'docker', 'build', '-t', 'myimage', './output'
+        }
+        exec {
+            commandLine 'docker', 'run', '-p', '80:80', '--name', 'mycont', 'myimage'
+        }
+    }
+}

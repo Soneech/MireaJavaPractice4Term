@@ -30,10 +30,10 @@
 ## [Practice 8](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practices1-8/src/main/java/org/soneech/practice8)
 Написать реализацию паттерна в соответствии с вариантом индивидуального задания: Снимок, Наблюдатель.
 
-## [Practice 9]
+## [Practice 9](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice9)
 Создать приложение, которое выводит какое-то сообщение в консоль. Создать Gradle Task, который создает jar-файл приложения, переносит его в отдельную папку, в которой хранится Dockerfile для jar, а затем создает Docker контейнер из данного jar-файла и запускает его.
 
-## [Practice 10](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice10/src/main/java/org/soneech)
+## [Practice 10](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice10)
 Создать приложение, в котором создается ApplicationContext и из него берётся бин с названием, переданным в качестве аргумента к приложению, и вызывается метод интерфейса, который он имплементирует. Нужно создать по одному бину для каждого класса, определить им название. Проверить, что вызывается при вводе названия каждого из бинов. Классы и интерфейс определяются в соответствии с вариантом индивидуального задания. 
 
 Задание варианта: Интерфейс Musician с методом doMusic(), его имплементации: Drummer, Guitarist, Trombonist.

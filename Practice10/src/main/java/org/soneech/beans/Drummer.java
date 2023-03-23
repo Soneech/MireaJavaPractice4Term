@@ -2,7 +2,7 @@ package org.soneech.beans;
 
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class Drummer implements Musician {
     @Override
     public void doMusic() {

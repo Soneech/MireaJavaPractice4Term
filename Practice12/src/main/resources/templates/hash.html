@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hash Page</title>
+</head>
+<body>
+    <form th:action="@{/}" th:method="POST" th:object="${fileData}">
+        <input type="text" id="input" placeholder="input file name" th:field="*{inputFileName}"/> <br>
+        <input type="text" id="output" placeholder="output file name" th:field="*{outputFileName}"/> <br>
+        <input type="submit" value="Hashing"/>
+    </form>
+
+    <p th:text="${message}"></p>
+</body>
+</html>

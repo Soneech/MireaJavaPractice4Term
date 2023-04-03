@@ -11,6 +11,7 @@
         <module name="MireaJavaPractices4Term" />
         <module name="Practice11" />
         <module name="Practices1-8" />
+        <module name="Practice12" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MireaJavaPractice4Term" options="" />
       <module name="Practice11" options="-parameters" />
+      <module name="Practice12" options="-parameters" />
     </option>
   </component>
 </project>

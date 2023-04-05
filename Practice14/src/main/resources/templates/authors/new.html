@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>New Author</title>
+  </head>
+  <body>
+      <form th:method="POST" th:action="@{/authors}" th:object="${author}">
+        <input type="text" id="nickname" th:field="*{nickname}" placeholder="nickname">
+        <input type="text" id="birthDate" th:field="*{birthDate}" placeholder="birth date">
+        <input type="submit" value="Add author">
+      </form>
+        <br>
+        <br>
+        <a href="/authors">Cancel</a>
+  </body>
+</html>

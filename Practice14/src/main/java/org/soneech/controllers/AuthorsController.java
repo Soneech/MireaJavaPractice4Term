@@ -1,8 +1,6 @@
 package org.soneech.controllers;
 
 import org.soneech.dao.GameAuthorDAO;
-import org.soneech.dao.GameDAO;
-import org.soneech.models.Game;
 import org.soneech.models.GameAuthor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

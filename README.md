@@ -49,3 +49,29 @@
 
 ## [Practice 12](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice12)
 Создать приложение, которое при запуске берет данные из одного файла, хеширует, а при остановке приложения удаляет исходный файл, оставляя только файл с захешированными данными. Названия первого и второго файла передаются в качестве аргументов при запуске (я сделаль немношк по-другому, ибо почему бы и нет). При отсутствии первого файла создает второй файл и записывает в него строку null. Реализовать с использованием аннотаций PostConstruct, PreDestroy.
+
+## [Practice 13](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice13)
+Создать файл application.yml в папке resources, добавить в него такие свойства:
+- student.name – имя студента;
+- student.last_name – фамилия студента;
+- student.group – название группы студента.
+При запуске приложения выведите данные свойства в консоль при помощи интерфейса Environment или аннотации Value.
+
+## [Practice 14](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice14)
+Создать простой html-документ, который будет содержать вашу фамилию, имя, номер группы, номер варианта. Создать контроллер, который будет возвращать данный статический документ при переходе на url «/home». Выполнить задание в зависимости с вариантом индивидуального задания.
+
+Задание варианта: 
+
+Создать класс Game с полями name, creationDate. Создать класс GameAuthor с полями nickname, birthDate. Создать классы-контроллеры для создания, удаления объектов и получения всех объектов каждого типа. Сами объекты хранить в памяти.
+
+## [Practice 15](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice15)
+Подключение PostgreSQL, работа с Hibernate
+
+## [Practice 16](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice16)
+Создать связь один-ко-многим между сущностями из предыдущего задания и проверить работу lazy loading.
+
+## [Practice 17](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice17)
+Добавить возможность фильтрации по всем полям всех классов с использованием Criteria API в Hibernate для программы из предыдущего задания.
+
+## [Practice 18](https://github.com/Soneech/MireaJavaPractice4Term/tree/master/Practice18)
+Переписать код предыдущего задания с использованием сервисов и отделения логики контроллера от логики сервиса и репозитория. В программе всё взаимодействие с базой данных должно быть реализовано через репозитории Spring Data Jpa.

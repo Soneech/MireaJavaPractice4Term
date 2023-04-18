@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Update dog</title>
+  </head>
+  <body>
+  <form th:method="PATCH" th:action="@{/dogs/{id}(id=${dog.getId()})}" th:object="${dog}">
+      <input type="text" id="name" th:field="*{name}" th:value="${dog.getName()}" placeholder="Name">
+      <input type="text" id="breed" th:field="*{breed}" th:value="${dog.getBreed()}" placeholder="Breed">
+      <input type="submit" value="Update dog">
+  </form>
+  </body>
+</html>

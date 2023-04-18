@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Add new dog</title>
+    </head>
+    <body>
+    <form th:method="POST" th:action="@{/dogs/new/{id}(id=${ownerId})}" th:object="${dog}">
+        <input type="text" id="name" th:field="*{name}" placeholder="Name">
+        <input type="text" id="breed" th:field="*{breed}" placeholder="Breed">
+        <input type="hidden" id="owner" th:value="${dog.setUser(dogOwner)}">
+        <input type="submit" value="Create dog">
+    </form>
+    </body>
+</html>

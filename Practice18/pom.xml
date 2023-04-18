@@ -10,7 +10,7 @@
         <relativePath></relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>Practice17</artifactId>
+    <artifactId>Practice18</artifactId>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -64,13 +64,4 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

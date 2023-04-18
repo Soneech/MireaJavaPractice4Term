@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Dogs</title>
+  </head>
+  <body>
+        <div th:each="dog: ${dogs}">
+            <div>
+                <a th:href="@{/dogs/{id}(id=${dog.getId()})}" th:text="${dog.getName()}"/>
+                <div style="padding-left: 15px">
+                    <p th:text="${'Breed: ' + dog.getBreed()}"/>
+                    <p th:text="${'Owner: ' + dog.getUser().getFirstName()}"/>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <a href="/dogs/ordered">Ordered dogs by breed</a>
+  </body>
+</html>

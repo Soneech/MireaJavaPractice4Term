@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Games</title>
+  </head>
+  <body>
+        <div th:each="game: ${games}">
+            <div>
+                <a th:href="@{/games/{id}(id=${game.getId()})}"
+                   th:text="${game.getName() + ' ' + game.getCreationDate()}"/>
+            </div>
+        </div>
+
+        <br>
+        <a href="/games/ordered-name">Ordered games by name</a><br>
+        <a href="/games/ordered-creation-date">Ordered games by creation date</a>
+  </body>
+</html>

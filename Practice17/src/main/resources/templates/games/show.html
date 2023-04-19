@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Game</title>
+    </head>
+    <body>
+        <div style="border: 1px solid black; border-radius: 5px; width: 500px">
+            <p th:text="${'Name: ' + game.getName()}"/>
+            <p th:text="${'Creation date: ' + game.getCreationDate()}"/>
+            <p>
+                Author:
+                <a
+                    th:href="@{/authors/{id}(id=${game.getGameAuthor().getId()})}"
+                    th:text="${game.getGameAuthor().getNickname()}"/>
+            </p>
+        </div>
+    </body>
+</html>

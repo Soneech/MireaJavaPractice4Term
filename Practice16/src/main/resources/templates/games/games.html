@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Games</title>
+  </head>
+  <body>
+        <div th:each="game: ${games}">
+            <a th:href="@{/games/{id}(id=${game.getId()})}" th:text="${game.getName()}"/>
+        </div>
+  </body>
+</html>

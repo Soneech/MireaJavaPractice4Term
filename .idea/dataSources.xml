@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/java_patterns_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="java_patterns_test_db@localhost" uuid="43be08fa-b178-4b2c-9221-450539a53462">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/java_patterns_test_db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

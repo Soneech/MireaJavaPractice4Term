@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Authors</title>
+    </head>
+    <body>
+        <div style="border: 1px solid black; border-radius: 5px; width: 500px">
+            <p th:each="author: ${authors}">
+                <a
+                    th:text="${author.getNickname() + ' ' + author.getBirthDate()}"
+                    th:href="@{/authors/{id}(id=${author.getId()})}"/>
+            </p>
+        </div>
+
+        <a href="/authors/new">Add new author</a><br>
+        <a href="/">Go to home page</a>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/java_patterns_db
+    username: postgres
+    password: postgres
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true

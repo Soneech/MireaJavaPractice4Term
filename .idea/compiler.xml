@@ -11,6 +11,7 @@
         <module name="Practice17" />
         <module name="Practice18" />
         <module name="MireaJavaPractices4Term" />
+        <module name="Practice19" />
         <module name="Practices1-8" />
         <module name="Practice10" />
         <module name="Practice11" />
@@ -32,6 +33,7 @@
       <module name="Practice16" options="-parameters" />
       <module name="Practice17" options="-parameters" />
       <module name="Practice18" options="-parameters" />
+      <module name="Practice19" options="-parameters" />
     </option>
   </component>
 </project>

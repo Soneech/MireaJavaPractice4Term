@@ -10,7 +10,7 @@
         <relativePath></relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>Practice18</artifactId>
+    <artifactId>Practice19</artifactId>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -42,7 +42,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.26</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -52,12 +51,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>5.0.1</version>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

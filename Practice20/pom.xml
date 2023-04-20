@@ -10,7 +10,7 @@
         <relativePath></relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>Practice19</artifactId>
+    <artifactId>Practice20</artifactId>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -75,4 +75,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

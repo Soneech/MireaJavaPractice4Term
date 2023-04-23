@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Edit game</title>
+  </head>
+  <body>
+  <form th:method="PATCH" th:action="@{/games/{id}(id=${game.getId()})}" th:object="${game}">
+      <input type="text" id="name" th:field="*{name}" th:value="${game.getName()}" placeholder="Name">
+      <input type="text" id="creation_date" th:field="*{creationDate}"
+             th:value="${game.getCreationDate()}" placeholder="Creation date">
+      <input type="submit" value="Update game">
+  </form>
+  </body>
+</html>

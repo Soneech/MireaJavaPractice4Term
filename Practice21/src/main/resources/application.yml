@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/java_patterns_db
+    username: postgres
+    password: postgres
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  mail:
+    host: smtp.yandex.ru
+    port: 465
+    username: spring-test-email
+    password: ywkvgmbjcadhvema
+    properties:
+      "mail.smtp.auth": true
+      "mail.smtp.ssl.enable": true
+      "mail.smtp.starttls.required": true
+      "mail.smtp.starttls.enable": true
+      "mail.smtp.ssl.protocols": TLSv1.2
+      "mail.smtp.ssl.trust": smtp.yandex.ru
+      "mail.transport.protocol": smtp

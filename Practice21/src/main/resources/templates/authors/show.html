@@ -13,7 +13,15 @@
                 <a th:href="@{/games/{id}(id=${game.getId()})}" th:text="${game.getName()}"></a>
             </div>
             <br>
+
+            <a th:href="@{/games/new/{id}(id=${author.getId()})}">Add game</a>
+            <br>
+            <form th:method="DELETE" th:action="@{/authors/{id}(id=${author.getId()})}">
+                <input type="submit" value="Delete author">
+            </form>
+
+            <br>
+            <a th:href="@{/authors/{id}/edit(id=${author.getId()})}">Edit</a>
         </div>
-        <br>
   </body>
 </html>

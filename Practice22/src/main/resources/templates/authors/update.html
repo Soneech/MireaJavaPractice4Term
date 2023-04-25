@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Edit author</title>
+    </head>
+    <body>
+        <form th:method="PATCH" th:action="@{/authors/{id}(id=${author.getId()})}" th:object="${author}">
+            <input type="text" id="nickname" th:field="*{nickname}"
+                   th:value="${author.getNickname()}" placeholder="Nickname">
+            <input type="text" id="birth_date" th:field="*{birthDate}"
+                   th:value="${author.getBirthDate()}" placeholder="Birth date">
+            <input type="submit" value="Update author">
+        </form>
+    </body>
+</html>

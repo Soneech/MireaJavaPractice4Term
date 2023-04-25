@@ -8,4 +8,4 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @Configuration
 @ComponentScan("org.soneech")
 @EnableJpaRepositories("org.soneech.repository")
-public class ConfigurationPr18 { }
+public class ConfigurationPr20 { }

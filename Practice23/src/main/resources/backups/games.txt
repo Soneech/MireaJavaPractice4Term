@@ -1,0 +1,6 @@
+Class: Game; id: 1; name: TES V: Skyrim; creation_date: 2011-11-11; game_author: THoward
+Class: Game; id: 2; name: TES III: Morrowind; creation_date: 2002-05-02; game_author: THoward
+Class: Game; id: 3; name: TES IV: Oblivion; creation_date: 2006-03-20; game_author: THoward
+Class: Game; id: 6; name: Black Desert Online; creation_date: 2015-10-12; game_author: KimDaeil
+Class: Game; id: 4; name: Death Stranding; creation_date: 2019-11-08; game_author: HKojima
+Class: Game; id: 17; name: Crimson Desert; creation_date: 2022-11-17; game_author: KimDaeil

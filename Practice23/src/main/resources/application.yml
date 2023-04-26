@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/java_patterns_db
+    username: postgres
+    password: postgres
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  jpa:
+    hibernate:
+      dll-auto: update
+    database-platform:
+      org.hibernate.dialect: PostgreSQLDialect
+  session:
+    store-type: jdbc
+    jdbc:
+      initialize-schema: always
+      table-name: spring_session

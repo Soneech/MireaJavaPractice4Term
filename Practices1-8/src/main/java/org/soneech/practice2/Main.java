@@ -8,12 +8,6 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Задание:");
-        System.out.println("""
-                Сортировка по возрасту в обратном порядке, фильтрация по имени
-                «начинается с А», сортировка по дате рождения, расчет среднего веса
-                """);
-
         List<Human> humans = new ArrayList<>();
         humans.add(new Human(20, "Anna", "Ivanova",
                         LocalDate.of(2002, 3, 15), 50));

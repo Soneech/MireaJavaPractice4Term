@@ -15,14 +15,14 @@ import java.sql.Date;
 public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     @Column(name = "name")
     private String name;
     @Basic
     @Column(name = "creation_date")
     private Date creationDate;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "game_author_id")
+    @JoinColumn(name = "author_id")
     private GameAuthor gameAuthor;
 
 }

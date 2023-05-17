@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AuthorRepository extends JpaRepository<GameAuthor, Long> {
-    GameAuthor findById(int id);
+    GameAuthor findById(long id);
 }

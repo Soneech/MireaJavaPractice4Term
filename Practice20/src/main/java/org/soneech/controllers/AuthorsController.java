@@ -33,7 +33,7 @@ public class AuthorsController {
     }
 
     @GetMapping("/{id}")
-    public String show(@PathVariable("id") int id, Model model) {
+    public String show(@PathVariable("id") Long id, Model model) {
         GameAuthor author = authorService.getAuthorById(id);
         model.addAttribute("author", author);
         return "authors/show";
@@ -65,19 +65,19 @@ public class AuthorsController {
     }
 
     @DeleteMapping("/{id}")
-    public String deleteAuthor(@PathVariable("id") int id) {
+    public String deleteAuthor(@PathVariable("id") Long id) {
         authorService.deleteAuthor(authorService.getAuthorById(id));
         return "redirect:/authors";
     }
 
     @GetMapping("/{id}/edit")
-    public String updatePage(@PathVariable("id") int id, Model model) {
+    public String updatePage(@PathVariable("id") Long id, Model model) {
         model.addAttribute("author", authorService.getAuthorById(id));
         return "authors/update";
     }
 
     @PatchMapping("/{id}")
-    public String update(@PathVariable("id") int id, @ModelAttribute("author") GameAuthor author) {
+    public String update(@PathVariable("id") Long id, @ModelAttribute("author") GameAuthor author) {
         authorService.updateAuthor(id, author);
         return "redirect:/authors";
     }

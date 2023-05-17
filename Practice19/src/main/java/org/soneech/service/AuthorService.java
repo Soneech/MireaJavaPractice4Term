@@ -29,9 +29,9 @@ public class AuthorService {
         return authorRepository.findAll();
     }
 
-    public GameAuthor getAuthorById(int id) {
+    public GameAuthor getAuthorById(Long id) {
         log.info("Getting author by id");
-        return authorRepository.findById(id);
+        return authorRepository.findById(id).get();
     }
 
     public void addAuthor(GameAuthor author) {
@@ -45,7 +45,7 @@ public class AuthorService {
         authorRepository.delete(author);
     }
 
-    public void updateAuthor(int id, GameAuthor updatedAuthor) {
+    public void updateAuthor(Long id, GameAuthor updatedAuthor) {
         log.info("Updating author with data from update form");
         GameAuthor author = getAuthorById(id);
         author.setNickname(updatedAuthor.getNickname());

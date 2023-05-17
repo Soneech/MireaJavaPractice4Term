@@ -26,9 +26,9 @@ public class GameService {
         return gameRepository.findAll();
     }
 
-    public Game getGameById(int id) {
+    public Game getGameById(Long id) {
         log.info("Getting game by id");
-        return gameRepository.findById(id);
+        return gameRepository.findById(id).get();
     }
 
     public void addGame(Game game) {
@@ -41,7 +41,7 @@ public class GameService {
         gameRepository.delete(game);
     }
 
-    public void updateGame(int id, Game updatedGame) {
+    public void updateGame(Long id, Game updatedGame) {
         log.info("Updating game with data from update form");
         Game game = getGameById(id);
         game.setName(updatedGame.getName());

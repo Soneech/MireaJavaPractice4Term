@@ -10,7 +10,16 @@ public class ComparingBySum {
         String str2 = scanner.nextLine();
 
         Comparator<String> comparator = Comparator.comparingLong(ComparingBySum::numbersSum);
-        System.out.println(comparator.compare(str1, str2));
+        int result = comparator.compare(str1, str2);
+        if (result == 0) {
+            System.out.println("Сумма цифр для чисел одинакова");
+        }
+        else if (result == 1) {
+            System.out.println("Сумма цифр первого числа больше");
+        }
+        else {
+            System.out.println("Сумма цифр второго числа больше");
+        }
     }
 
     public static int numbersSum(String str) {

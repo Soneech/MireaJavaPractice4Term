@@ -17,7 +17,7 @@ import java.util.List;
 public class GameAuthor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     @Column(name = "nickname")
     private String nickname;
     @Basic

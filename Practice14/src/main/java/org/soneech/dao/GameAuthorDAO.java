@@ -1,6 +1,5 @@
 package org.soneech.dao;
 
-import org.soneech.models.Game;
 import org.soneech.models.GameAuthor;
 import org.springframework.stereotype.Component;
 

@@ -22,7 +22,7 @@ public class Game {
     @Column(name = "creation_date")
     private Date creationDate;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "game_author_id")
+    @JoinColumn(name = "author_id")
     private GameAuthor gameAuthor;
 
     @Override

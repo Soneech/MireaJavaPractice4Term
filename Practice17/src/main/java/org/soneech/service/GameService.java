@@ -10,7 +10,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.soneech.models.Game;
-import org.soneech.models.GameAuthor;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

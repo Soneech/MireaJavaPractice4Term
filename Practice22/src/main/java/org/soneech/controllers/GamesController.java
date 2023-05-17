@@ -30,7 +30,7 @@ public class GamesController {
     }
 
     @GetMapping("/{id}")
-    public String show(@PathVariable("id") int id, Model model) {
+    public String show(@PathVariable("id") Long id, Model model) {
         Game game = gameService.getGameById(id);
         model.addAttribute("game", game);
         return "games/show";
@@ -51,31 +51,31 @@ public class GamesController {
     }
 
     @GetMapping("/new/{authorId}")
-    public String newGamePage(@PathVariable("authorId") int authorId, @ModelAttribute("game") Game game) {
+    public String newGamePage(@PathVariable("authorId") Long authorId, @ModelAttribute("game") Game game) {
         return "games/new";
     }
 
     @PostMapping("/new/{authorId}")
-    public String create(@PathVariable("authorId") int authorId, @ModelAttribute("game") Game game) {
+    public String create(@PathVariable("authorId") Long authorId, @ModelAttribute("game") Game game) {
         game.setGameAuthor(authorService.getAuthorById(authorId));
         gameService.addGame(game);
         return "redirect:/games";
     }
 
     @DeleteMapping("/{id}")
-    public String deleteGame(@PathVariable("id") int id) {
+    public String deleteGame(@PathVariable("id") Long id) {
         gameService.deleteGame(gameService.getGameById(id));
         return "redirect:/games";
     }
 
     @GetMapping("/{id}/edit")
-    public String updatePage(@PathVariable("id") int id, Model model) {
+    public String updatePage(@PathVariable("id") Long id, Model model) {
         model.addAttribute("game", gameService.getGameById(id));
         return "games/update";
     }
 
     @PatchMapping("/{id}")
-    public String update(@PathVariable("id") int id, @ModelAttribute("game") Game game) {
+    public String update(@PathVariable("id") Long id, @ModelAttribute("game") Game game) {
         gameService.updateGame(id, game);
         return "redirect:/games";
     }

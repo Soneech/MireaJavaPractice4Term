@@ -28,8 +28,8 @@ public class AuthorService {
         return authorRepository.findAll();
     }
 
-    public GameAuthor getAuthorById(int id) {
-        return authorRepository.findById(id);
+    public GameAuthor getAuthorById(Long id) {
+        return authorRepository.findById(id).get();
     }
 
     public void addAuthor(GameAuthor author) {
@@ -41,7 +41,7 @@ public class AuthorService {
         authorRepository.delete(author);
     }
 
-    public void updateAuthor(int id, GameAuthor updatedAuthor) {
+    public void updateAuthor(Long id, GameAuthor updatedAuthor) {
         GameAuthor author = getAuthorById(id);
         author.setNickname(updatedAuthor.getNickname());
         author.setBirthDate(updatedAuthor.getBirthDate());

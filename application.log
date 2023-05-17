@@ -1,117 +1,318 @@
-709  [restartedMain] INFO  org.soneech.SpringBootAppPr23 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 9068 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
-711  [restartedMain] INFO  org.soneech.SpringBootAppPr23 – No active profile set, falling back to 1 default profile: "default"
-754  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-754  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-1155 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1194 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
-1774 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1782 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1783 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1784 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.5]
-1828 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1828 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1068 ms
-1930 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-2084 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b2f9cc8
-2086 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-2120 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-2156 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-2425 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-3044 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-3052 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-3357 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-3467 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
-3632 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-3647 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-3663 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-3671 [restartedMain] INFO  org.soneech.SpringBootAppPr23 – Started SpringBootAppPr19 in 3.317 seconds (process running for 4.218)
-8257 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-8257 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-8258 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
-8281 [http-nio-8080-exec-1] INFO  org.soneech.service.GameService – Find all games
-22726 [http-nio-8080-exec-4] INFO  org.soneech.service.GameService – Getting game by id
-25571 [http-nio-8080-exec-3] INFO  org.soneech.service.GameService – Getting list of games, ordered by creation date
-26279 [http-nio-8080-exec-2] INFO  org.soneech.service.GameService – Getting list of games, ordered by name
-57304 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-57307 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-57309 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-679  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 9604 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
-682  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
-732  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-732  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-1131 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1175 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
-1780 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-1788 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-1789 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-1789 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.5]
-1832 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-1832 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1099 ms
-1931 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-2074 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33111d10
-2075 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-2109 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-2142 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-2406 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-3033 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-3041 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-3335 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-3439 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
-3610 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-3626 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-3643 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-3651 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Started SpringBootAppPr19 in 3.313 seconds (process running for 4.16)
-11849 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-11849 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-11850 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-15020 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-15023 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-15025 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-1124 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 22924 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
-1128 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
-1193 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1194 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-1789 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1850 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
-2754 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-2767 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-2768 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-2768 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.5]
-2838 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-2839 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1644 ms
-3010 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-3263 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ea67578
-3265 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-3323 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-3385 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-3859 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-4882 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-4895 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-5394 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-5562 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
-5835 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-5862 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-5890 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-5901 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Started SpringBootAppPr19 in 5.292 seconds (process running for 6.585)
-16811 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-16811 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-16813 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
-18587 [http-nio-8080-exec-2] INFO  org.soneech.service.AuthorService – Find all authors
-33089 [http-nio-8080-exec-3] INFO  org.soneech.service.AuthorService – Getting author by id
-39839 [http-nio-8080-exec-4] INFO  org.soneech.service.GameService – Getting game by id
-52073 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-52080 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-52086 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-1023 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 21496 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
-1027 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
-1088 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1088 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-1736 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1814 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
-2820 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-2939 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1850 ms
-3149 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-3393 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31800cf
-3395 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-3454 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-3542 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
-4001 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+1004 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 16084 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+1012 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+1078 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1078 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1595 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1640 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+1642 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1646 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'authorRepository' defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'authorRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1653 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1675 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'authorRepository', defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+822  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 18360 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+825  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+881  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+882  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1279 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1319 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+1320 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1324 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'authorRepository' defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'authorRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1332 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1350 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'authorRepository', defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+806  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 2432 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+810  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+873  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+873  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1276 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1314 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+1315 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1320 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'gameRepository' defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'gameRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1327 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1345 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'gameRepository', defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+930  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 2576 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+934  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+987  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+987  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1402 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1447 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+1449 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1453 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'gameRepository' defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'gameRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1461 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1480 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'gameRepository', defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+779  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 19136 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+781  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+835  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+836  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1215 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1255 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+1256 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1260 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'gameRepository' defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'gameRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1269 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1285 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'gameRepository', defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+805  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 1524 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+807  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+853  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+853  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1264 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1304 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+1305 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1309 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'gameRepositoryPr19' defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'gameRepositoryPr19' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1317 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1334 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'gameRepositoryPr19', defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+892  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 19308 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+895  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+948  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+948  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1379 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1423 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+1424 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1428 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'authorRepository' defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'authorRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1435 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1453 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'authorRepository', defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+775  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 15424 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+779  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+829  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+830  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1227 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1268 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+1269 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1273 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'gameRepository' defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'gameRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1280 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1297 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'gameRepository', defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+771  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 8660 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+773  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+823  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+823  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1211 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1252 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+1253 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1257 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'gameRepository' defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'gameRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1265 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1282 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'gameRepository', defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+826  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 18904 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+829  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+882  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+883  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1286 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1325 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+1326 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1330 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'gameRepository' defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'gameRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1338 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1355 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'gameRepository', defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.GameRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+801  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 16368 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+803  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+861  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+862  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1277 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1319 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+1320 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1324 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'authorRepository' defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19] for bean 'authorRepository' since there is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr18] bound.
+1333 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger – 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+1350 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'authorRepository', defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr19, could not be registered. A bean with that name has already been defined in org.soneech.repository.AuthorRepository defined in @EnableJpaRepositories declared on ConfigurationPr18 and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+852  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Starting SpringBootAppPr19 using Java 19.0.2 with PID 14456 (D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term\Practice19\target\classes started by Soneech in D:\Programming\JAVA_PROJECTS\MireaJavaPractice4Term)
+856  [restartedMain] INFO  org.soneech.SpringBootAppPr19 – No active profile set, falling back to 1 default profile: "default"
+911  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+911  [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+1294 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1336 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+1337 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1341 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+1945 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1953 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1954 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1954 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.5]
+1998 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1998 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1086 ms
+2099 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2249 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ac2d181
+2251 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2286 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+2321 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+2590 [restartedMain] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+3225 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3232 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3471 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3581 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+3755 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+3775 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3796 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3804 [restartedMain] INFO  org.soneech.SpringBootAppPr19 – Started SpringBootAppPr19 in 3.389 seconds (process running for 4.345)
+17972 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+17972 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+17973 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+19584 [http-nio-8080-exec-3] INFO  org.soneech.service.AuthorService – Find all authors
+560237 [http-nio-8080-exec-8] INFO  org.soneech.service.GameService – Find all games
+561307 [http-nio-8080-exec-9] INFO  org.soneech.service.GameService – Getting game by id
+565313 [http-nio-8080-exec-10] INFO  org.soneech.service.AuthorService – Getting author by id
+568411 [http-nio-8080-exec-2] INFO  org.soneech.service.AuthorService – Getting author by id
+571678 [http-nio-8080-exec-1] INFO  org.soneech.service.AuthorService – Updating author with data from update form
+571678 [http-nio-8080-exec-1] INFO  org.soneech.service.AuthorService – Getting author by id
+571680 [http-nio-8080-exec-1] INFO  org.soneech.service.AuthorService – Adding author to DB with data from form
+571712 [http-nio-8080-exec-3] INFO  org.soneech.service.AuthorService – Find all authors
+697858 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+697861 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+697863 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.

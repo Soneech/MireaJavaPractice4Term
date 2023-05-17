@@ -25,8 +25,8 @@ public class GameService {
         return gameRepository.findAll();
     }
 
-    public Game getGameById(int id) {
-        return gameRepository.findById(id);
+    public Game getGameById(Long id) {
+        return gameRepository.findById(id).get();
     }
 
     public void addGame(Game game) {
@@ -37,7 +37,7 @@ public class GameService {
         gameRepository.delete(game);
     }
 
-    public void updateGame(int id, Game updatedGame) {
+    public void updateGame(Long id, Game updatedGame) {
         Game game = getGameById(id);
         game.setName(updatedGame.getName());
         game.setCreationDate(updatedGame.getCreationDate());

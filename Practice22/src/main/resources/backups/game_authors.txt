@@ -1,12 +1,12 @@
-Class: GameAuthor; id: 1; nickname: THoward; birth_date: 1971-04-25;
-	games:
-		id: 1; name: TES V: Skyrim; creation_date: 2011-11-11
-		id: 2; name: TES III: Morrowind; creation_date: 2002-05-02
-		id: 3; name: TES IV: Oblivion; creation_date: 2006-03-20
 Class: GameAuthor; id: 2; nickname: HKojima; birth_date: 1963-08-24;
 	games:
 		id: 4; name: Death Stranding; creation_date: 2019-11-08
-Class: GameAuthor; id: 5; nickname: KimDaeil; birth_date: 1980-01-26;
+Class: GameAuthor; id: 3; nickname: Kim Daeil; birth_date: 1980-01-26;
 	games:
-		id: 6; name: Black Desert Online; creation_date: 2015-10-12
-		id: 17; name: Crimson Desert; creation_date: 2022-11-17
+		id: 5; name: Black Desert Online; creation_date: 2015-10-12
+Class: GameAuthor; id: 1; nickname: THoward1; birth_date: 1971-04-25;
+	games:
+		id: 1; name: TES V: Skyrim; creation_date: 2011-11-11
+		id: 2; name: TES III: Morrowind; creation_date: 2002-05-02
+Class: GameAuthor; id: 5; nickname: Soneech; birth_date: 2003-02-23;
+	games:

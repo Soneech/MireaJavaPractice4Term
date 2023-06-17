@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MireaJavaPractices4Term" />
+        <module name="ExamTasks" />
         <module name="Practice20" />
         <module name="Practice10" />
         <module name="Practice21" />

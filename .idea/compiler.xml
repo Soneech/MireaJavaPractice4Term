@@ -27,10 +27,12 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Practice23" target="19" />
+      <module name="Task21" target="19" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ExamTasks" options="" />
       <module name="MireaJavaPractice4Term" options="" />
       <module name="Practice11" options="-parameters" />
       <module name="Practice12" options="-parameters" />

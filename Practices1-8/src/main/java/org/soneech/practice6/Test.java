@@ -1,6 +1,10 @@
 package org.soneech.practice6;
 
-import org.soneech.practice6.abstract_factory.*;
+import org.soneech.practice6.abstract_factory.clothing_factory.DestructionClothingFactory;
+import org.soneech.practice6.abstract_factory.clothing_factory.IllusionClothingFactory;
+import org.soneech.practice6.abstract_factory.mage_factory.DestructionMageFactory;
+import org.soneech.practice6.abstract_factory.mage_factory.IllusionMageFactory;
+import org.soneech.practice6.abstract_factory.mage_factory.MageFactory;
 import org.soneech.practice6.builder.User;
 import org.soneech.practice6.prototype.Mage;
 import org.soneech.practice6.prototype.Warrior;
@@ -16,6 +20,7 @@ public class Test {
     }
 
     public static void checkFactoryPattern() {
+        System.out.println("-- Abstract Factory Pattern --\n");
         MageFactory mageFactory;
 
         mageFactory = new DestructionMageFactory();

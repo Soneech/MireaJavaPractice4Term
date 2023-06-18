@@ -1,4 +1,4 @@
-package org.soneech.practice6.abstract_factory;
+package org.soneech.practice6.abstract_factory.mage;
 
 public class DestructionMage extends Mage {
 
